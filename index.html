@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            width: 70vw;
+            height: 1000px;
+            background-color: yellow;
+            position: relative;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            /* position: absolute;
+            bottom: 0;
+            right: 0; */
+
+        }
+        .box:nth-child(1){
+            background-color: coral;
+            position: relative;
+            z-index: 20;
+        }
+        .box:nth-child(2){
+            background-color: dodgerblue;
+            position: absolute;
+            z-index: 10;
+            top: 100px;
+            left: 100px;
+        }
+        .box:nth-child(3){
+            background-color: purple;
+            position: absolute;
+            top: 200px;
+            left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>    
+</body>
+</html>
